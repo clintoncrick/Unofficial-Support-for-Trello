@@ -1,11 +1,11 @@
 var config = {
     name: 'Prello',
-    version: '0.1',
+    version: '1.0',
     cache: false,
 
     //API SETTINGS;
     API_KEY:    '',
     API_SECRET:  '',
-    API_RETURN_URL:  '',
+    API_RETURN_URL:  'http://clintoncrick.com/prello/',
 };
 this.exports = config;
