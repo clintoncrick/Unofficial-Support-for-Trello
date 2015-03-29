@@ -39,6 +39,10 @@ Pebble.addEventListener("webviewclosed", function (e) {
             }
         }
     }
+    else {
+        console.log('[CONFIG]: e is empty?');
+        console.log(JSON.stringify(e));
+    }
 
     if (!token) {
         g.showError('Unable to load token. Please reconfigure your app.');
@@ -64,5 +68,5 @@ setTimeout(function(){
     }
     
     Screens.hideSplash();
-}, 500);
+}, 750);
 //END OF FILE;

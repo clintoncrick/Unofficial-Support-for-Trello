@@ -29,13 +29,9 @@
                 "type": "font"
             },
             {
-                "file": "images/trello-logo_64.png",
-                "name": "IMAGES_TRELLO_LOGO_64_PNG",
-                "type": "png"
-            },
-            {
-                "file": "images/cog_12.png",
-                "name": "IMAGES_COG_12_PNG",
+                "file": "images/trello-logo_28.png",
+                "menuIcon": true,
+                "name": "IMAGES_TRELLO_LOGO_28_PNG",
                 "type": "png"
             },
             {
@@ -44,9 +40,13 @@
                 "type": "png"
             },
             {
-                "file": "images/trello-logo_28.png",
-                "menuIcon": true,
-                "name": "IMAGES_TRELLO_LOGO_28_PNG",
+                "file": "images/cog_12.png",
+                "name": "IMAGES_COG_12_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/trello-logo_64.png",
+                "name": "IMAGES_TRELLO_LOGO_64_PNG",
                 "type": "png"
             }
         ]

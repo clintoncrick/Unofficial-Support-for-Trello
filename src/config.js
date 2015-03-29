@@ -1,6 +1,6 @@
 var config = {
     name: 'Prello',
-    version: '1.1',
+    version: '1.2',
     cache: false,
 
     //API SETTINGS;

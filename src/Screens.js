@@ -103,6 +103,8 @@ Screens.showOptions = function (item, selectFunction) {
         });
 
         Screens.options.on('select', function (e) {
+            console.log('[OPTIONS] Selecting the following items: ');
+            console.log(JSON.stringify(e));
             selectFunction(e);
         });
     }

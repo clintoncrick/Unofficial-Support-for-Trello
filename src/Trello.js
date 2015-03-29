@@ -209,17 +209,21 @@ var Trello = {
                     title: e.item.title,
                     body: (e.item.desc && e.item.desc.length ? e.item.desc : e.item.title),
                     action: {
-                        'down': 'images/cog_12.png'
-                    }
+                        'select': 'images/cog_12.png'
+                    },
+                    scrollable: true
                 });
                 
+                /*
                 if (item.idChecklists && item.idChecklists.length) {
                     //card.action('up', 'images/check.png');
                     Screens.dyn['card'].on('click', 'up', function (e) {
                         //Trello.showChecklist(item.idChecklists);
                     });
                 }
-                Screens.dyn['card'].on('click', 'down', function (e) {
+                */
+                
+                Screens.dyn['card'].on('click', 'select', function (e) {
                     var selectOptions = function(e){
                         if (e.item.value) {
                             if (e.item.value == 'close') {
