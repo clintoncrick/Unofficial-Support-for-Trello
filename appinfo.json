@@ -4,7 +4,7 @@
         "configurable"
     ],
     "companyName": "Clinton Earl Crick",
-    "longName": "Prello",
+    "longName": "Unofficial Support for Trello",
     "projectType": "pebblejs",
     "resources": {
         "media": [
@@ -29,14 +29,8 @@
                 "type": "font"
             },
             {
-                "file": "images/trello-logo_28.png",
-                "menuIcon": true,
-                "name": "IMAGES_TRELLO_LOGO_28_PNG",
-                "type": "png"
-            },
-            {
-                "file": "images/trello-logo_12.png",
-                "name": "IMAGES_TRELLO_LOGO_12_PNG",
+                "file": "images/trello-logo_64.png",
+                "name": "IMAGES_TRELLO_LOGO_64_PNG",
                 "type": "png"
             },
             {
@@ -45,16 +39,22 @@
                 "type": "png"
             },
             {
-                "file": "images/trello-logo_64.png",
-                "name": "IMAGES_TRELLO_LOGO_64_PNG",
+                "file": "images/trello-logo_12.png",
+                "name": "IMAGES_TRELLO_LOGO_12_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/trello-logo_28.png",
+                "menuIcon": true,
+                "name": "IMAGES_TRELLO_LOGO_28_PNG",
                 "type": "png"
             }
         ]
     },
-    "shortName": "Prello",
+    "shortName": "Unofficial Support for Trello",
     "uuid": "1f4e3b2f-36fa-4f6e-a5ca-a98204dd4b94",
     "versionCode": 1,
-    "versionLabel": "1.0",
+    "versionLabel": "1.2",
     "watchapp": {
         "watchface": false
     }

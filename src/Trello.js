@@ -203,6 +203,7 @@ var Trello = {
             Screens.dyn[type].on('select', function (e) {
                 var item = e.item;
                 item.type = 'cards';
+                Trello.selectedItem = item;
                 
                 console.log('Selected card: ' + JSON.stringify(e.item));
                 Screens.dyn['card'] = new UI.Card({
@@ -227,13 +228,13 @@ var Trello = {
                     var selectOptions = function(e){
                         if (e.item.value) {
                             if (e.item.value == 'close') {
-                                Trello.archiveItem(item);
+                                Trello.archiveItem(Trello.selectedItem);
                                 Screens.dyn['card'].hide();
                                 Screens.hideOptions();
                             }
                         }
                     }
-                    Screens.showOptions(item, selectOptions);
+                    Screens.showOptions(Trello.selectedItem, selectOptions);
                 });
                 
                 Screens.dyn['card'].show();

@@ -22,9 +22,9 @@ Screens.showSplash = function () {
         
         Screens.splash.add(new UI.Text({
             position: new Vector2(0, 70),
-            size: new Vector2(144, 30),
+            size: new Vector2(144, 60),
             text: config.name,
-            font:'gothic_28_bold',
+            font:'gothic_24_bold',
             color:'black',
             textOverflow:'wrap',
             textAlign:'center',
@@ -77,6 +77,7 @@ Screens.showStart = function () {
         Screens.start = new UI.Card({
             title: 'Welcome to ' + config.name + '!',
             body: 'To start, authorize your Trello account via the Configuration screen.',
+            scrollable: true
         });
     }
     Screens.start.show();
@@ -103,8 +104,8 @@ Screens.showOptions = function (item, selectFunction) {
         });
 
         Screens.options.on('select', function (e) {
-            console.log('[OPTIONS] Selecting the following items: ');
-            console.log(JSON.stringify(e));
+            //console.log('[OPTIONS] Selecting the following items: ');
+            //console.log(JSON.stringify(e));
             selectFunction(e);
         });
     }
