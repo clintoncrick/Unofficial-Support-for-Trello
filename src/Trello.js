@@ -10,7 +10,6 @@ var Screens = require('Screens');
 
 var Trello = {
     //Settings;
-    API_URL: 'https://trello.com/1',
     TOKEN: false,
     
     //Data;
@@ -267,13 +266,13 @@ var Trello = {
 
         var URL = false;
         if (type === 'boards') {
-            URL = this.API_URL + '/members/my/boards?lists=open&cards=open&key=' + config.API_KEY + '&token=' + this.TOKEN;
+            URL = config.API_URL + '/members/my/boards?lists=open&cards=open&key=' + config.API_KEY + '&token=' + this.TOKEN;
         }
         else if (type === 'lists') {
-            URL = this.API_URL + '/board/' + typeID + '/lists?cards=open&key=' + config.API_KEY + '&token=' + this.TOKEN;
+            URL = config.API_URL + '/board/' + typeID + '/lists?cards=open&key=' + config.API_KEY + '&token=' + this.TOKEN;
         }
         else if (type === 'cards') {
-            URL = this.API_URL + '/lists/' + typeID + '?cards=open&key=' + config.API_KEY + '&token=' + this.TOKEN;
+            URL = config.API_URL + '/lists/' + typeID + '?cards=open&key=' + config.API_KEY + '&token=' + this.TOKEN;
         }
 
         if (!URL) {
@@ -326,7 +325,7 @@ var Trello = {
      * @returns {String}
      */
     getAuthorizationURL: function () {
-        return this.API_URL + '/authorize?callback_method=fragment&scope=read,write&expiration=never&name=' + config.name + '&key=' + config.API_KEY + '&return_url=' + config.API_RETURN_URL;
+        return config.API_URL + '/authorize?callback_method=fragment&scope=read,write&expiration=never&name=' + config.name + '&key=' + config.API_KEY + '&return_url=' + config.API_RETURN_URL;
     },
     
     
@@ -343,7 +342,7 @@ var Trello = {
             return;
         }
         
-        var URL = this.API_URL + '/' + item.type + '/' + item.id + '/closed?value=true&key=' + config.API_KEY + '&token=' + this.TOKEN;
+        var URL = config.API_URL + '/' + item.type + '/' + item.id + '/closed?value=true&key=' + config.API_KEY + '&token=' + this.TOKEN;
         
         console.log('[Archive Item]: URL: ' + URL);
         console.log('[Archive Item]: Item: ' + JSON.stringify(item));
