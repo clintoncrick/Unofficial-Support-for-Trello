@@ -29,8 +29,8 @@ Pebble.addEventListener("webviewclosed", function (e) {
     var token = false;
     if (e && e.response) {
         try {
-            e.response = JSON.parse(e.response);
-            token = e.response.token;
+            resp = JSON.parse(e.response);
+            token = resp.token;
         }
         catch (error) {
             console.log("[CONFIG]: Failed to parse:" + error);
