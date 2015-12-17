@@ -325,7 +325,7 @@ var Trello = {
      * @returns {String}
      */
     getAuthorizationURL: function () {
-        return config.API_URL + '/authorize?callback_method=fragment&scope=read,write&expiration=never&name=' + config.name + '&key=' + config.API_KEY + '&return_url=' + config.API_RETURN_URL;
+        return config.API_URL + '/authorize?callback_method=fragment&scope=read,write&expiration=never&name=' + encodeURIComponent(config.name) + '&key=' + config.API_KEY + '&return_url=' + config.API_RETURN_URL;
     },
     
     

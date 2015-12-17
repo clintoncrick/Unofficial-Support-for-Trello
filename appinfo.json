@@ -11,17 +11,17 @@
             {
                 "file": "images/menu_icon.png",
                 "name": "IMAGE_MENU_ICON",
-                "type": "png"
+                "type": "bitmap"
             },
             {
                 "file": "images/logo_splash.png",
                 "name": "IMAGE_LOGO_SPLASH",
-                "type": "png"
+                "type": "bitmap"
             },
             {
                 "file": "images/tile_splash.png",
                 "name": "IMAGE_TILE_SPLASH",
-                "type": "png"
+                "type": "bitmap"
             },
             {
                 "file": "fonts/UbuntuMono-Regular.ttf",
@@ -34,8 +34,9 @@
                 "type": "png"
             },
             {
-                "file": "images/cog_12.png",
-                "name": "IMAGES_COG_12_PNG",
+                "file": "images/trello-logo_28.png",
+                "menuIcon": true,
+                "name": "IMAGES_TRELLO_LOGO_28_PNG",
                 "type": "png"
             },
             {
@@ -44,15 +45,18 @@
                 "type": "png"
             },
             {
-                "file": "images/trello-logo_28.png",
-                "menuIcon": true,
-                "name": "IMAGES_TRELLO_LOGO_28_PNG",
+                "file": "images/cog_12.png",
+                "name": "IMAGES_COG_12_PNG",
                 "type": "png"
             }
         ]
     },
     "sdkVersion": "3",
     "shortName": "Unofficial Support for Trello",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
     "uuid": "1f4e3b2f-36fa-4f6e-a5ca-a98204dd4b94",
     "versionCode": 1,
     "versionLabel": "1.3",
